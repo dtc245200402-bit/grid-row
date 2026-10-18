@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thực hành CSS - grid-row</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="page-header">
+    <p class="eyebrow">CSS GRID · BÀI THỰC HÀNH</p>
+    <h1>Thuộc tính <code>grid-row</code></h1>
+    <p class="intro">So sánh cách một Grid Item chiếm hai hàng bằng đường kẻ hàng cụ thể hoặc bằng từ khóa <code>span</code>.</p>
+  </header>
+
+  <main class="examples">
+    <section class="example-card">
+      <div class="example-heading">
+        <div>
+          <span class="example-number">01</span>
+          <h2><code>grid-row: 1 / 3;</code></h2>
+        </div>
+        <p>Bắt đầu ở đường kẻ hàng 1 và kết thúc tại đường kẻ hàng 3, vì vậy Ô 1 chiếm hàng 1 và hàng 2.</p>
+      </div>
+      <div class="grid-container demo-one">
+        <div class="item item1">Ô 1</div><div class="item">Ô 2</div><div class="item">Ô 3</div>
+        <div class="item">Ô 4</div><div class="item">Ô 5</div><div class="item">Ô 6</div>
+      </div>
+      <a class="source-link" href="example-1.html">Mở ví dụ riêng ↗</a>
+    </section>
+
+    <section class="example-card">
+      <div class="example-heading">
+        <div>
+          <span class="example-number">02</span>
+          <h2><code>grid-row: 2 / 4;</code></h2>
+        </div>
+        <p>Ô 1 chuyển xuống bắt đầu ở đường kẻ hàng 2 và kéo dài đến đường kẻ hàng 4, chiếm hàng 2 và hàng 3.</p>
+      </div>
+      <div class="grid-container demo-two">
+        <div class="item item1">Ô 1</div><div class="item">Ô 2</div><div class="item">Ô 3</div>
+        <div class="item">Ô 4</div><div class="item">Ô 5</div><div class="item">Ô 6</div>
+      </div>
+      <a class="source-link" href="example-2.html">Mở ví dụ riêng ↗</a>
+    </section>
+
+    <section class="example-card">
+      <div class="example-heading">
+        <div>
+          <span class="example-number">03</span>
+          <h2><code>grid-row: span 2;</code></h2>
+        </div>
+        <p><code>span 2</code> yêu cầu Ô 1 kéo dài qua hai hàng. Grid tự xác định vị trí đặt phù hợp đầu tiên.</p>
+      </div>
+      <div class="grid-container demo-three">
+        <div class="item item1">Ô 1</div><div class="item">Ô 2</div><div class="item">Ô 3</div>
+        <div class="item">Ô 4</div><div class="item">Ô 5</div><div class="item">Ô 6</div>
+      </div>
+      <a class="source-link" href="example-3.html">Mở ví dụ riêng ↗</a>
+    </section>
+  </main>
+
+  <footer class="page-footer">Grid có 3 cột, 3 hàng cao 100px và khoảng cách 10px. Ô 1 được tô màu khác để dễ quan sát.</footer>
+</body>
+</html>
